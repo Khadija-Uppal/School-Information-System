@@ -23,7 +23,8 @@ namespace School_Information_System
         {
             LoadDashboardData();
         }
-        private void LoadDashboardData() {
+        private void LoadDashboardData()
+        {
             try
             {
                 using (SqlConnection con = DbConnection.GetConnection())
@@ -57,5 +58,33 @@ namespace School_Information_System
             }
         }
 
+        private void lblResults_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStudents_Click(object sender, EventArgs e)
+        {
+            StudentForm sf = new StudentForm();
+            sf.Show();
+        }
+
+        private void btnTeachers_Click(object sender, EventArgs e)
+        {
+            TeacherForm tf = new TeacherForm();
+            tf.Show();
+        }
+
+        private void btnAttendance_Click(object sender, EventArgs e)
+        {
+            AttendanceForm af = new AttendanceForm();
+            af.Show();
+        }
+
+        private void btnResults_Click(object sender, EventArgs e)
+        {
+            ResultsForm rf = new ResultsForm();
+            rf.Show();
+        }
     }
 }
