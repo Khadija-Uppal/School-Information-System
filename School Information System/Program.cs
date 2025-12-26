@@ -11,7 +11,12 @@ namespace School_Information_System
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Mainform());
+         //   Application.Run(new DashboardForm());
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+
+            // Application starts from Dashboard
+            Application.Run(new DashboardForm());
         }
     }
 }
