@@ -28,69 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblName = new Label();
-            lblRoll = new Label();
-            lblMarks = new Label();
-            lblGender = new Label();
+            btnAddStudent = new Button();
+            btnRefresh = new Button();
+            dgvStudents = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvStudents).BeginInit();
             SuspendLayout();
             // 
-            // lblName
+            // btnAddStudent
             // 
-            lblName.AutoSize = true;
-            lblName.Location = new Point(176, 74);
-            lblName.Name = "lblName";
-            lblName.Size = new Size(50, 20);
-            lblName.TabIndex = 0;
-            lblName.Text = "label1";
+            btnAddStudent.Location = new Point(208, 293);
+            btnAddStudent.Name = "btnAddStudent";
+            btnAddStudent.Size = new Size(151, 59);
+            btnAddStudent.TabIndex = 0;
+            btnAddStudent.Text = "Add Student";
+            btnAddStudent.UseVisualStyleBackColor = true;
             // 
-            // lblRoll
+            // btnRefresh
             // 
-            lblRoll.AutoSize = true;
-            lblRoll.Location = new Point(176, 118);
-            lblRoll.Name = "lblRoll";
-            lblRoll.Size = new Size(50, 20);
-            lblRoll.TabIndex = 1;
-            lblRoll.Text = "label2";
+            btnRefresh.Location = new Point(465, 293);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new Size(122, 59);
+            btnRefresh.TabIndex = 1;
+            btnRefresh.Text = "Refresh";
+            btnRefresh.UseVisualStyleBackColor = true;
             // 
-            // lblMarks
+            // dgvStudents
             // 
-            lblMarks.AutoSize = true;
-            lblMarks.Location = new Point(176, 172);
-            lblMarks.Name = "lblMarks";
-            lblMarks.Size = new Size(50, 20);
-            lblMarks.TabIndex = 2;
-            lblMarks.Text = "label3";
-            // 
-            // lblGender
-            // 
-            lblGender.AutoSize = true;
-            lblGender.Location = new Point(176, 227);
-            lblGender.Name = "lblGender";
-            lblGender.Size = new Size(50, 20);
-            lblGender.TabIndex = 3;
-            lblGender.Text = "label4";
+            dgvStudents.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvStudents.Location = new Point(127, 68);
+            dgvStudents.Name = "dgvStudents";
+            dgvStudents.RowHeadersWidth = 51;
+            dgvStudents.Size = new Size(550, 204);
+            dgvStudents.TabIndex = 2;
             // 
             // StudentForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(lblGender);
-            Controls.Add(lblMarks);
-            Controls.Add(lblRoll);
-            Controls.Add(lblName);
+            Controls.Add(dgvStudents);
+            Controls.Add(btnRefresh);
+            Controls.Add(btnAddStudent);
             Name = "StudentForm";
-            Text = "Form1";
+            Text = "StudentForm";
             Load += StudentForm_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvStudents).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Label lblName;
-        private Label lblRoll;
-        private Label lblMarks;
-        private Label lblGender;
+        private Button btnAddStudent;
+        private Button btnRefresh;
+        private DataGridView dgvStudents;
     }
 }

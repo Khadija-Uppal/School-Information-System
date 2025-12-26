@@ -12,49 +12,48 @@ using System.Windows.Forms;
 
 namespace School_Information_System
 {
-    public partial class StudentForm : Form
+    public partial class TeacherForm : Form
     {
-        public StudentForm()
+        public TeacherForm()
         {
             InitializeComponent();
         }
 
-        private void StudentForm_Load(object sender, EventArgs e)
+        private void TeacherForm_Load(object sender, EventArgs e)
         {
-            LoadStudents();
+            LoadTeachers();
         }
-        private void LoadStudents()
+        private void LoadTeachers()
         {
             try
             {
                 using (SqlConnection con = DbConnection.GetConnection())
                 {
                     SqlDataAdapter da =
-                        new SqlDataAdapter("SELECT * FROM Students", con);
+                        new SqlDataAdapter("SELECT * FROM Teachers", con);
 
                     DataTable dt = new DataTable();
                     da.Fill(dt);
-                    dgvStudents.DataSource = dt;
+                    dgvTeachers.DataSource = dt;
                 }
             }
             catch
             {
                 // SAFE MODE (No DB on your PC)
-                dgvStudents.DataSource = null;
+                dgvTeachers.DataSource = null;
             }
         }
 
-        private void btnAddStudent_Click(object sender, EventArgs e)
+        private void btnAddTeacher_Click(object sender, EventArgs e)
         {
-            AddStudentForm frm = new AddStudentForm();
+            AddTeacherForm frm = new AddTeacherForm();
             frm.ShowDialog();
-            LoadStudents();
+            LoadTeachers();
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            LoadStudents();
+            LoadTeachers();
         }
-
     }
 }
