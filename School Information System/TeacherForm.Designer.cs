@@ -52,7 +52,7 @@
             // 
             btnRefresh.BackColor = Color.LightSteelBlue;
             btnRefresh.Font = new Font("Georgia", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            btnRefresh.Location = new Point(482, 451);
+            btnRefresh.Location = new Point(738, 448);
             btnRefresh.Name = "btnRefresh";
             btnRefresh.Size = new Size(167, 69);
             btnRefresh.TabIndex = 1;
@@ -85,7 +85,7 @@
             // 
             button1.BackColor = Color.LightSteelBlue;
             button1.Font = new Font("Georgia", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            button1.Location = new Point(730, 450);
+            button1.Location = new Point(485, 449);
             button1.Name = "button1";
             button1.Size = new Size(166, 68);
             button1.TabIndex = 4;

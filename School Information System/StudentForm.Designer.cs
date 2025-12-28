@@ -41,9 +41,9 @@
             btnAddStudent.BackColor = Color.RosyBrown;
             btnAddStudent.Font = new Font("Georgia", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             btnAddStudent.ForeColor = Color.Azure;
-            btnAddStudent.Location = new Point(164, 470);
+            btnAddStudent.Location = new Point(188, 470);
             btnAddStudent.Name = "btnAddStudent";
-            btnAddStudent.Size = new Size(179, 59);
+            btnAddStudent.Size = new Size(179, 72);
             btnAddStudent.TabIndex = 0;
             btnAddStudent.Text = "Add Student";
             btnAddStudent.UseVisualStyleBackColor = false;
@@ -53,9 +53,9 @@
             btnRefresh.BackColor = Color.RosyBrown;
             btnRefresh.Font = new Font("Georgia", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             btnRefresh.ForeColor = Color.Azure;
-            btnRefresh.Location = new Point(469, 470);
+            btnRefresh.Location = new Point(731, 470);
             btnRefresh.Name = "btnRefresh";
-            btnRefresh.Size = new Size(161, 59);
+            btnRefresh.Size = new Size(161, 72);
             btnRefresh.TabIndex = 1;
             btnRefresh.Text = "Refresh";
             btnRefresh.UseVisualStyleBackColor = false;
@@ -87,9 +87,9 @@
             button1.BackColor = Color.RosyBrown;
             button1.Font = new Font("Georgia", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(762, 470);
+            button1.Location = new Point(456, 470);
             button1.Name = "button1";
-            button1.Size = new Size(184, 59);
+            button1.Size = new Size(184, 72);
             button1.TabIndex = 4;
             button1.Text = "Home";
             button1.UseVisualStyleBackColor = false;
