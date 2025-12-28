@@ -86,5 +86,10 @@ namespace School_Information_System
             ResultsForm rf = new ResultsForm();
             rf.Show();
         }
+
+        private void lblAttendance_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

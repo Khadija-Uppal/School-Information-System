@@ -33,58 +33,101 @@
             cmbStudents = new ComboBox();
             cmbStatus = new ComboBox();
             dgvAttendance = new DataGridView();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvAttendance).BeginInit();
             SuspendLayout();
             // 
             // btnMark
             // 
-            btnMark.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnMark.Location = new Point(522, 299);
+            btnMark.BackColor = Color.LightSteelBlue;
+            btnMark.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnMark.ForeColor = Color.Transparent;
+            btnMark.Location = new Point(711, 458);
             btnMark.Name = "btnMark";
-            btnMark.Size = new Size(151, 68);
+            btnMark.Size = new Size(256, 68);
             btnMark.TabIndex = 0;
             btnMark.Text = "Save Attendance";
-            btnMark.UseVisualStyleBackColor = true;
+            btnMark.UseVisualStyleBackColor = false;
             btnMark.Click += btnMark_Click;
             // 
             // dtpDate
             // 
-            dtpDate.Location = new Point(122, 41);
+            dtpDate.CalendarFont = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dtpDate.Location = new Point(34, 176);
             dtpDate.Name = "dtpDate";
-            dtpDate.Size = new Size(250, 27);
+            dtpDate.Size = new Size(260, 27);
             dtpDate.TabIndex = 1;
             // 
             // cmbStudents
             // 
             cmbStudents.FormattingEnabled = true;
-            cmbStudents.Location = new Point(522, 139);
+            cmbStudents.Location = new Point(742, 302);
             cmbStudents.Name = "cmbStudents";
-            cmbStudents.Size = new Size(151, 28);
+            cmbStudents.Size = new Size(199, 28);
             cmbStudents.TabIndex = 2;
             // 
             // cmbStatus
             // 
             cmbStatus.FormattingEnabled = true;
             cmbStatus.Items.AddRange(new object[] { "Present", "Absent" });
-            cmbStatus.Location = new Point(522, 213);
+            cmbStatus.Location = new Point(742, 396);
             cmbStatus.Name = "cmbStatus";
-            cmbStatus.Size = new Size(151, 28);
+            cmbStatus.Size = new Size(199, 28);
             cmbStatus.TabIndex = 3;
             // 
             // dgvAttendance
             // 
+            dgvAttendance.BackgroundColor = Color.White;
             dgvAttendance.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvAttendance.Location = new Point(34, 83);
+            dgvAttendance.Location = new Point(34, 222);
             dgvAttendance.Name = "dgvAttendance";
             dgvAttendance.RowHeadersWidth = 51;
-            dgvAttendance.Size = new Size(417, 329);
+            dgvAttendance.Size = new Size(643, 331);
             dgvAttendance.TabIndex = 4;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.Location = new Point(757, 251);
+            label1.Name = "label1";
+            label1.Size = new Size(169, 31);
+            label1.TabIndex = 5;
+            label1.Text = "Student Name";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label2.Location = new Point(768, 349);
+            label2.Name = "label2";
+            label2.Size = new Size(139, 31);
+            label2.TabIndex = 6;
+            label2.Text = "Attendance";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.LightSteelBlue;
+            label3.Font = new Font("Georgia", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.ButtonFace;
+            label3.Location = new Point(377, 62);
+            label3.Name = "label3";
+            label3.Size = new Size(354, 39);
+            label3.TabIndex = 7;
+            label3.Text = "Attendance Record";
             // 
             // AttendanceForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.LavenderBlush;
+            ClientSize = new Size(1116, 626);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(dgvAttendance);
             Controls.Add(cmbStatus);
             Controls.Add(cmbStudents);
@@ -95,6 +138,7 @@
             Load += AttendanceForm_Load;
             ((System.ComponentModel.ISupportInitialize)dgvAttendance).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -104,5 +148,8 @@
         private ComboBox cmbStudents;
         private ComboBox cmbStatus;
         private DataGridView dgvAttendance;
+        private Label label1;
+        private Label label2;
+        private Label label3;
     }
 }

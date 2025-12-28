@@ -45,50 +45,49 @@
             // 
             lblStudents.AutoSize = true;
             lblStudents.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblStudents.ForeColor = SystemColors.ButtonHighlight;
-            lblStudents.Location = new Point(99, 35);
+            lblStudents.ForeColor = Color.Snow;
+            lblStudents.Location = new Point(112, 35);
             lblStudents.Name = "lblStudents";
-            lblStudents.Size = new Size(103, 31);
+            lblStudents.Size = new Size(0, 31);
             lblStudents.TabIndex = 0;
-            lblStudents.Text = "Students";
             // 
             // lblTeachers
             // 
             lblTeachers.AutoSize = true;
+            lblTeachers.BackColor = Color.LavenderBlush;
             lblTeachers.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold | FontStyle.Italic);
-            lblTeachers.ForeColor = SystemColors.ButtonHighlight;
-            lblTeachers.Location = new Point(99, 188);
+            lblTeachers.ForeColor = Color.RosyBrown;
+            lblTeachers.Location = new Point(109, 188);
             lblTeachers.Name = "lblTeachers";
-            lblTeachers.Size = new Size(106, 31);
+            lblTeachers.Size = new Size(0, 31);
             lblTeachers.TabIndex = 1;
-            lblTeachers.Text = "Teachers";
             // 
             // lblAttendance
             // 
             lblAttendance.AutoSize = true;
             lblAttendance.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblAttendance.ForeColor = SystemColors.ButtonHighlight;
-            lblAttendance.Location = new Point(510, 35);
+            lblAttendance.ForeColor = Color.Snow;
+            lblAttendance.Location = new Point(527, 35);
             lblAttendance.Name = "lblAttendance";
-            lblAttendance.Size = new Size(131, 31);
+            lblAttendance.Size = new Size(0, 31);
             lblAttendance.TabIndex = 2;
-            lblAttendance.Text = "Attendance";
+            lblAttendance.Click += lblAttendance_Click;
             // 
             // lblResults
             // 
             lblResults.AutoSize = true;
             lblResults.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblResults.ForeColor = SystemColors.ButtonHighlight;
-            lblResults.Location = new Point(527, 188);
+            lblResults.ForeColor = Color.RosyBrown;
+            lblResults.Location = new Point(548, 188);
             lblResults.Name = "lblResults";
-            lblResults.Size = new Size(88, 31);
+            lblResults.Size = new Size(26, 31);
             lblResults.TabIndex = 3;
-            lblResults.Text = "Results";
+            lblResults.Text = "  ";
             lblResults.Click += lblResults_Click;
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.ActiveCaption;
+            panel1.BackColor = Color.LavenderBlush;
             panel1.Controls.Add(btnResults);
             panel1.Controls.Add(btnAttendance);
             panel1.Controls.Add(btnTeachers);
@@ -97,69 +96,69 @@
             panel1.Controls.Add(lblResults);
             panel1.Controls.Add(lblTeachers);
             panel1.Controls.Add(lblAttendance);
-            panel1.Location = new Point(12, 80);
+            panel1.Location = new Point(12, 89);
             panel1.Margin = new Padding(3, 5, 3, 5);
             panel1.Name = "panel1";
             panel1.Padding = new Padding(50, 25, 50, 25);
-            panel1.Size = new Size(776, 356);
+            panel1.Size = new Size(1082, 516);
             panel1.TabIndex = 4;
             // 
             // btnResults
             // 
-            btnResults.BackColor = SystemColors.ButtonHighlight;
+            btnResults.BackColor = Color.RosyBrown;
             btnResults.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnResults.Location = new Point(477, 226);
+            btnResults.Location = new Point(619, 268);
             btnResults.Name = "btnResults";
-            btnResults.Size = new Size(203, 67);
+            btnResults.Size = new Size(233, 79);
             btnResults.TabIndex = 7;
-            btnResults.Text = "CHECK RESULTS";
+            btnResults.Text = "RESULTS";
             btnResults.UseVisualStyleBackColor = false;
             btnResults.Click += btnResults_Click;
             // 
             // btnAttendance
             // 
-            btnAttendance.BackColor = SystemColors.ButtonHighlight;
+            btnAttendance.BackColor = Color.RosyBrown;
             btnAttendance.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAttendance.Location = new Point(477, 69);
+            btnAttendance.Location = new Point(619, 123);
             btnAttendance.Name = "btnAttendance";
-            btnAttendance.Size = new Size(203, 79);
+            btnAttendance.Size = new Size(233, 79);
             btnAttendance.TabIndex = 6;
-            btnAttendance.Text = "VIEW ATTENDANCE";
+            btnAttendance.Text = "ATTENDANCE";
             btnAttendance.UseVisualStyleBackColor = false;
             btnAttendance.Click += btnAttendance_Click;
             // 
             // btnTeachers
             // 
-            btnTeachers.BackColor = SystemColors.ButtonHighlight;
+            btnTeachers.BackColor = Color.RosyBrown;
             btnTeachers.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnTeachers.Location = new Point(53, 226);
+            btnTeachers.Location = new Point(210, 268);
             btnTeachers.Name = "btnTeachers";
             btnTeachers.Size = new Size(229, 79);
             btnTeachers.TabIndex = 5;
-            btnTeachers.Text = "VIEW TEACHERS";
+            btnTeachers.Text = "TEACHERS";
             btnTeachers.UseVisualStyleBackColor = false;
             btnTeachers.Click += btnTeachers_Click;
             // 
             // btnStudents
             // 
-            btnStudents.BackColor = SystemColors.ButtonHighlight;
+            btnStudents.BackColor = Color.RosyBrown;
             btnStudents.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnStudents.Location = new Point(53, 69);
+            btnStudents.Location = new Point(210, 123);
             btnStudents.Name = "btnStudents";
-            btnStudents.Size = new Size(210, 79);
+            btnStudents.Size = new Size(229, 79);
             btnStudents.TabIndex = 4;
-            btnStudents.Text = "VIEW STUDENTS";
+            btnStudents.Text = "STUDENTS";
             btnStudents.UseVisualStyleBackColor = false;
             btnStudents.Click += btnStudents_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(181, 25);
+            label1.Font = new Font("Georgia", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.RosyBrown;
+            label1.Location = new Point(237, 31);
             label1.Name = "label1";
-            label1.Size = new Size(448, 38);
+            label1.Size = new Size(642, 39);
             label1.TabIndex = 5;
             label1.Text = "STUDENT MANAGEMENT SYSTEM";
             // 
@@ -167,8 +166,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ScrollBar;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.Snow;
+            ClientSize = new Size(1106, 619);
             Controls.Add(label1);
             Controls.Add(panel1);
             Name = "DashboardForm";
