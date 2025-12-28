@@ -36,9 +36,10 @@
             txtSubject = new TextBox();
             txtPhone = new TextBox();
             panel1 = new Panel();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
             textBox3 = new TextBox();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
+            button1 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -116,16 +117,16 @@
             panel1.Size = new Size(279, 682);
             panel1.TabIndex = 7;
             // 
-            // textBox1
+            // textBox3
             // 
-            textBox1.BackColor = Color.LightSteelBlue;
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Georgia", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(62, 226);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(155, 38);
-            textBox1.TabIndex = 0;
-            textBox1.Text = "Teacher";
+            textBox3.BackColor = Color.LightSteelBlue;
+            textBox3.BorderStyle = BorderStyle.None;
+            textBox3.Font = new Font("Georgia", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox3.Location = new Point(77, 314);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(117, 38);
+            textBox3.TabIndex = 2;
+            textBox3.Text = "Form";
             // 
             // textBox2
             // 
@@ -138,22 +139,35 @@
             textBox2.TabIndex = 1;
             textBox2.Text = "Registration";
             // 
-            // textBox3
+            // textBox1
             // 
-            textBox3.BackColor = Color.LightSteelBlue;
-            textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Font = new Font("Georgia", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(77, 314);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(117, 38);
-            textBox3.TabIndex = 2;
-            textBox3.Text = "Form";
+            textBox1.BackColor = Color.LightSteelBlue;
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Font = new Font("Georgia", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(62, 226);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(155, 38);
+            textBox1.TabIndex = 0;
+            textBox1.Text = "Teacher";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.LightSteelBlue;
+            button1.Font = new Font("Georgia", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button1.Location = new Point(643, 469);
+            button1.Name = "button1";
+            button1.Size = new Size(213, 49);
+            button1.TabIndex = 8;
+            button1.Text = "Teachers";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // AddTeacherForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1105, 624);
+            Controls.Add(button1);
             Controls.Add(panel1);
             Controls.Add(txtPhone);
             Controls.Add(txtSubject);
@@ -183,5 +197,6 @@
         private TextBox textBox1;
         private TextBox textBox3;
         private TextBox textBox2;
+        private Button button1;
     }
 }

@@ -36,6 +36,7 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvAttendance).BeginInit();
             SuspendLayout();
             // 
@@ -44,7 +45,7 @@
             btnMark.BackColor = Color.LightSteelBlue;
             btnMark.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             btnMark.ForeColor = Color.Transparent;
-            btnMark.Location = new Point(711, 458);
+            btnMark.Location = new Point(728, 458);
             btnMark.Name = "btnMark";
             btnMark.Size = new Size(256, 68);
             btnMark.TabIndex = 0;
@@ -119,12 +120,26 @@
             label3.TabIndex = 7;
             label3.Text = "Attendance Record";
             // 
+            // button1
+            // 
+            button1.BackColor = Color.LightSteelBlue;
+            button1.Font = new Font("Georgia", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ButtonHighlight;
+            button1.Location = new Point(728, 546);
+            button1.Name = "button1";
+            button1.Size = new Size(256, 58);
+            button1.TabIndex = 8;
+            button1.Text = "Home";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // AttendanceForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LavenderBlush;
             ClientSize = new Size(1116, 626);
+            Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -151,5 +166,6 @@
         private Label label1;
         private Label label2;
         private Label label3;
+        private Button button1;
     }
 }

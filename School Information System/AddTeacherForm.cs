@@ -43,5 +43,11 @@ namespace School_Information_System
                 MessageBox.Show("Database not available");
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TeacherForm tform = new TeacherForm();
+            tform.Show();
+        }
     }
 }

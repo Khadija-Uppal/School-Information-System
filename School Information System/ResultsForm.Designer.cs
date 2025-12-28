@@ -37,6 +37,7 @@
             label2 = new Label();
             label3 = new Label();
             textBox1 = new TextBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvResults).BeginInit();
             SuspendLayout();
             // 
@@ -119,18 +120,31 @@
             textBox1.BackColor = Color.LavenderBlush;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Georgia", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(456, 35);
+            textBox1.Location = new Point(536, 32);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(194, 38);
             textBox1.TabIndex = 8;
             textBox1.Text = "Results ";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.LightSteelBlue;
+            button1.Font = new Font("Georgia", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button1.Location = new Point(98, 564);
+            button1.Name = "button1";
+            button1.Size = new Size(187, 73);
+            button1.TabIndex = 9;
+            button1.Text = "Dasboard";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // ResultsForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LavenderBlush;
-            ClientSize = new Size(1129, 611);
+            ClientSize = new Size(1419, 668);
+            Controls.Add(button1);
             Controls.Add(textBox1);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -159,5 +173,6 @@
         private Label label2;
         private Label label3;
         private TextBox textBox1;
+        private Button button1;
     }
 }

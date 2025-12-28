@@ -41,6 +41,7 @@
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
+            button1 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -173,12 +174,25 @@
             textBox3.TabIndex = 2;
             textBox3.Text = "Form";
             // 
+            // button1
+            // 
+            button1.BackColor = Color.RosyBrown;
+            button1.Font = new Font("Georgia", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button1.Location = new Point(547, 475);
+            button1.Name = "button1";
+            button1.Size = new Size(226, 55);
+            button1.TabIndex = 10;
+            button1.Text = "Students";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // AddStudentForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LavenderBlush;
             ClientSize = new Size(1062, 634);
+            Controls.Add(button1);
             Controls.Add(panel1);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -212,5 +226,6 @@
         private TextBox textBox2;
         private TextBox textBox1;
         private TextBox textBox3;
+        private Button button1;
     }
 }

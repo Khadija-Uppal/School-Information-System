@@ -55,5 +55,11 @@ namespace School_Information_System
         {
             LoadTeachers();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DashboardForm form = new DashboardForm();
+            form.Show();
+        }
     }
 }

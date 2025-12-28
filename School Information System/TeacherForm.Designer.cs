@@ -32,6 +32,7 @@
             btnRefresh = new Button();
             dgvTeachers = new DataGridView();
             label1 = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvTeachers).BeginInit();
             SuspendLayout();
             // 
@@ -39,7 +40,7 @@
             // 
             btnAddTeacher.BackColor = Color.LightSteelBlue;
             btnAddTeacher.Font = new Font("Georgia", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            btnAddTeacher.Location = new Point(303, 415);
+            btnAddTeacher.Location = new Point(220, 451);
             btnAddTeacher.Name = "btnAddTeacher";
             btnAddTeacher.Size = new Size(184, 69);
             btnAddTeacher.TabIndex = 0;
@@ -51,7 +52,7 @@
             // 
             btnRefresh.BackColor = Color.LightSteelBlue;
             btnRefresh.Font = new Font("Georgia", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            btnRefresh.Location = new Point(572, 415);
+            btnRefresh.Location = new Point(482, 451);
             btnRefresh.Name = "btnRefresh";
             btnRefresh.Size = new Size(167, 69);
             btnRefresh.TabIndex = 1;
@@ -63,10 +64,10 @@
             // 
             dgvTeachers.BackgroundColor = Color.LightSteelBlue;
             dgvTeachers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTeachers.Location = new Point(244, 136);
+            dgvTeachers.Location = new Point(160, 136);
             dgvTeachers.Name = "dgvTeachers";
             dgvTeachers.RowHeadersWidth = 51;
-            dgvTeachers.Size = new Size(561, 258);
+            dgvTeachers.Size = new Size(776, 286);
             dgvTeachers.TabIndex = 2;
             // 
             // label1
@@ -80,12 +81,25 @@
             label1.TabIndex = 3;
             label1.Text = "Teachers ";
             // 
+            // button1
+            // 
+            button1.BackColor = Color.LightSteelBlue;
+            button1.Font = new Font("Georgia", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button1.Location = new Point(730, 450);
+            button1.Name = "button1";
+            button1.Size = new Size(166, 68);
+            button1.TabIndex = 4;
+            button1.Text = "Home";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // TeacherForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LavenderBlush;
             ClientSize = new Size(1075, 606);
+            Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(dgvTeachers);
             Controls.Add(btnRefresh);
@@ -104,5 +118,6 @@
         private Button btnRefresh;
         private DataGridView dgvTeachers;
         private Label label1;
+        private Button button1;
     }
 }
