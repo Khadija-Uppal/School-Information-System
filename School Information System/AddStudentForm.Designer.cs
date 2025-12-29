@@ -38,9 +38,9 @@
             label3 = new Label();
             label4 = new Label();
             panel1 = new Panel();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
             textBox3 = new TextBox();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
             button1 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -76,7 +76,7 @@
             // btnSave
             // 
             btnSave.BackColor = Color.RosyBrown;
-            btnSave.Font = new Font("Georgia", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSave.Font = new Font("Georgia", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             btnSave.Location = new Point(578, 391);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(147, 55);
@@ -141,16 +141,16 @@
             panel1.Size = new Size(265, 644);
             panel1.TabIndex = 9;
             // 
-            // textBox1
+            // textBox3
             // 
-            textBox1.BackColor = Color.RosyBrown;
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Georgia", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(43, 247);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(152, 38);
-            textBox1.TabIndex = 0;
-            textBox1.Text = "Student";
+            textBox3.BackColor = Color.RosyBrown;
+            textBox3.BorderStyle = BorderStyle.None;
+            textBox3.Font = new Font("Georgia", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox3.Location = new Point(56, 335);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(97, 38);
+            textBox3.TabIndex = 2;
+            textBox3.Text = "Form";
             // 
             // textBox2
             // 
@@ -163,16 +163,16 @@
             textBox2.TabIndex = 1;
             textBox2.Text = "Registration";
             // 
-            // textBox3
+            // textBox1
             // 
-            textBox3.BackColor = Color.RosyBrown;
-            textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Font = new Font("Georgia", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(56, 335);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(97, 38);
-            textBox3.TabIndex = 2;
-            textBox3.Text = "Form";
+            textBox1.BackColor = Color.RosyBrown;
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Font = new Font("Georgia", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(43, 247);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(152, 38);
+            textBox1.TabIndex = 0;
+            textBox1.Text = "Student";
             // 
             // button1
             // 
