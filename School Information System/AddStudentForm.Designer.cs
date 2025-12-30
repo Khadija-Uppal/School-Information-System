@@ -77,9 +77,9 @@
             // 
             btnSave.BackColor = Color.RosyBrown;
             btnSave.Font = new Font("Georgia", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            btnSave.Location = new Point(578, 391);
+            btnSave.Location = new Point(563, 410);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(147, 55);
+            btnSave.Size = new Size(180, 72);
             btnSave.TabIndex = 4;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = false;
@@ -112,7 +112,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.SeaShell;
             label3.Font = new Font("Georgia", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label3.Location = new Point(482, 271);
+            label3.Location = new Point(463, 269);
             label3.Name = "label3";
             label3.Size = new Size(108, 27);
             label3.TabIndex = 7;
@@ -123,7 +123,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.SeaShell;
             label4.Font = new Font("Georgia", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label4.Location = new Point(494, 324);
+            label4.Location = new Point(475, 324);
             label4.Name = "label4";
             label4.Size = new Size(96, 27);
             label4.TabIndex = 8;
@@ -178,9 +178,9 @@
             // 
             button1.BackColor = Color.RosyBrown;
             button1.Font = new Font("Georgia", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            button1.Location = new Point(547, 475);
+            button1.Location = new Point(513, 501);
             button1.Name = "button1";
-            button1.Size = new Size(226, 55);
+            button1.Size = new Size(275, 80);
             button1.TabIndex = 10;
             button1.Text = "Students";
             button1.UseVisualStyleBackColor = false;
